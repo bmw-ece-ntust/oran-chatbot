@@ -1,0 +1,41 @@
+## Default settings
+### meta/llama3-8b-instruct
+#nvidia_api_key: "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"
+
+### mistralai/mixtral-8x7b-instruct-v0.1
+#nvidia_api_key: "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"
+#nvidia_api_key: "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"
+#nvidia_api_key: "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"
+
+### meta/llama3-70b-instruct
+#nvidia_api_key: "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"
+
+## 
+nvidia_api_key: "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"
+
+## Set these to required models endpoints from NVIDIA NGC 
+#llm_model: "mistralai/mixtral-8x7b-instruct-v0.1"
+#llm_model: "meta/llama3-70b-instruct"
+llm_model: "meta/llama-3.1-8b-instruct"
+
+# Augmentation_model:
+#embedding_model: "NV-Embed-QA"
+#embedding_model: "ai-embed-qa-4"
+#embedding_model: "meta/llama3-70b-instruct"
+embedding_model: "nvolveqa_40k"
+#embedding_model: "nvidia/nv-embed-v1"
+#embedding_model: "snowflake/arctic-embed-l"
+
+NIM: false
+nim_model_name: "meta-llama3-8b-instruct"
+nim_base_url: "http://localhost:8019/v1"
+temperature: 0.1
+top_p: 0.5
+max_tokens: 1600
+
+NREM: false
+nrem_model_name: "NV-Embed-QA"
+nrem_api_endpoint_url: "http://localhost:8084/v1"
+nrem_truncate: "END"
+
+file_delete_password: "oranpwd"
